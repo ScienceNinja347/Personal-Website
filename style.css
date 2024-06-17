@@ -24,7 +24,6 @@ header {
     width: 20%;
     
  }
-
  .post-text-box {
     flex: 70%;
     padding: 20px;
@@ -35,6 +34,7 @@ header {
  }
  /*profile image and heading style*/
  .profile img {
+    border-radius: 15px 15px 15px 15px;
     width: 120px;
     display: block;
     margin-left: 0;
@@ -46,6 +46,7 @@ header {
 
 /*navigation bar style */
 nav{
+    border-radius: 15px 15px 15px 15px;
     text-align: center;
     word-spacing: 30px;
     padding: 10px;
@@ -59,6 +60,7 @@ nav a {
     font-size: larger;
 }
 footer{
+    border-radius: 15px 15px 15px 15px;
     text-align: center;
     word-spacing: 30px;
     padding: 10px;
