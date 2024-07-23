@@ -1,14 +1,22 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+     'Lucida Sans', Arial, sans-serif;
+ }
+
 /*header style*/
 header {
-    text-align: center; 
-    padding: 20px;
+   color: #000;
+   font-size: 1rem;
+   font-weight: bold;
+   font-style: italic;
+   padding: 100 2rem;
+   text-align: center;
+   justify-content: space-between;
  }
- /*navigation menu style*/
- nav {
-    text-align: center;
-    word-spacing: 30px;
-    Padding: 10px;
- }
+ 
  /*creating the two-column layout*/
  *{
     box-sizing: border-box;
@@ -17,13 +25,7 @@ header {
     display: flex;
     flex-wrap: wrap;
  }
- .column{
-    float: left;
- }
- .column.side{
-    width: 20%;
-    
- }
+
  .post-text-box {
     flex: 70%;
     padding: 20px;
@@ -34,11 +36,15 @@ header {
  }
  /*profile image and heading style*/
  .profile img {
-    border-radius: 15px 15px 15px 15px;
     width: 120px;
     display: block;
+    align-items: center;
     margin-left: 0;
     margin-right: 0;
+ }
+
+ .column-left{
+   align-items: center;
  }
  .profile h1 {
     text-align: center;
@@ -46,7 +52,6 @@ header {
 
 /*navigation bar style */
 nav{
-    border-radius: 15px 15px 15px 15px;
     text-align: center;
     word-spacing: 30px;
     padding: 10px;
@@ -60,10 +65,46 @@ nav a {
     font-size: larger;
 }
 footer{
-    border-radius: 15px 15px 15px 15px;
     text-align: center;
-    word-spacing: 30px;
-    padding: 10px;
     background-color: #f5f5dc;
-    font-family: Helvetica;
+    color: #000;
+   font-weight: bold;
+   padding: 100 2rem;
+   justify-content: space-between;
 }
+.container-footer{
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0rem 2rem;
+}
+
+.container-footer-below{
+   padding: 9px;
+   font-weight: bold;
+}
+
+.col{
+   display: flex;
+   flex-direction: row;
+}
+
+button {
+   padding: 1rem 3rem;
+   font-size: 1.05rem;
+   font-weight: bold;
+   border: none;
+   color: #000000;
+   background: #f5f5dc;
+   cursor: pointer;
+   border-radius: 50px;
+   text-align: center;
+   justify-content: space-between;
+ }
+
+ button:hover {
+   background: #d1d152;
+   font-size: larger;
+   color: #000;
+ }
